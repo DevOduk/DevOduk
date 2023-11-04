@@ -8,3 +8,4 @@
 DevOduk/DevOduk is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 You can click the Preview link to take a look at your changes.
 --->
+This account contains all my works including my porftolio wwebsites, and projects i hace done over the past years. For more enquiries reach me through email
