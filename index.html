@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Portfolio.Homepage1.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="web icon" type="png" href="websiteicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="Portfolio.Homepage1.css">
+     
+    <title>Austine Otieno | Frontend Web Developer</title>
+</head>
+<!---------
+    <div onclick="MessageOpen()" title="Chat Me" style="position: fixed; bottom: 20px; right: 20px;"><i class="fa-solid fa-comment" style="color: #ffffff;"></i></div>
+    <div style="position: fixed; bottom: 150px; right: 50px; width: 400px; height: 500px; background-color: #ffffff;">
+        <button style="background-color: gainsboro; width: 100%; height: 60px; outline: none; border: none; font-size: 20px;">Online Chat</button>
+        <div style="height: 100%; background-color: rgb(39, 0, 196); width: 100%; padding: 15px 5px;">
+            <div style="background-color: #00ff08; width: fit-content; border-radius: 20px; padding: 20px;"><span id="greeting"></span>&#128519;. How can I help you today?</div>
+            <div id="message"></div>
+            <div style="position: absolute; width: 100%; background-color: rgb(255, 255, 255); bottom: 20px;"><input  id="chat" type="text" placeholder="Type Message" ><span id="send"><i class="fa-regular fa-face-smile" style="color: #000000;"></i> <i class="fa-regular fa-image" style="color: #000000;"></i> <i class="fa-regular fa-paper-plane" style="color: #ff0000;"></i></span></div>
+        </div>
+    </div>
+--------->
+<nav class="mainnav">
+    <button id="menuIcon" onclick="OpenMenu()">
+        <i class="fa-solid fa-bars" style="color: var(--primary-text);"></i>
+    </button>
+    <a class="Austine" href="">
+        <span>AU</span>
+    </a>
+    <ul id="menuList">
+        <div id="MenuHeading">
+            <div>
+                <h1>MENU</h1>
+            </div>
+            <div class="xmark">
+                <i onclick="CloseMenu()" class="fa-solid fa-xmark" style="color: var(--primary-text);"></i>
+            </div>
+        </div>
+        <a class="navlist" onclick="CloseMenu()" href="#home"><li>Home</li></a>
+        <a class="navlist" onclick="CloseMenu()" href="#about" ><li>About Me</li></a>
+        <a class="navlist" onclick="CloseMenu()" href="#projects"><li>Projects</li></a>
+        <a class="navlist" onclick="CloseMenu()" href="#designsTop"><li>Top Designs</li></a>
+        <a class="navlist" onclick="CloseMenu()" href="#testimonials"><li>Testimonials</li></a>
+        <a class="navlist" onclick="CloseMenu()" href="#contactMe"><li>Contact Me</li></a>
+        <span id="ClickforDark"> <span ></span>  <i class="fa fa-moon" id="darkModeSwitcher"></i>
+    </span>
+    </ul>
+</nav>
+
+<nav class="Cookies" id="Navigatio">
+    <i class="fa-solid fa-xmark" onclick="ToggleCookiesNav()"></i>
+    <div style="padding: 0 30px;">
+        This page uses cookies.  I understand that your online privacy is very important and consenting to our collection of some personal information takes great trust.
+    </div>
+    <span id="button">
+        <span>
+            <button class="btnPrivacy firstChild" id="firstChild"  onclick="ToggleCookiesNav()">Accept All</button>
+        </span>
+        <span>
+            <button title="View Cookie Policies" class="btnPrivacy" onclick="ToggleNav()" >View Cookie Policies</button>
+        </span>
+    </span>
+</nav>
+<body id="home"> 
+    <section class="hero">
+            <div class="mouse_scroll">
+
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <div>
+                    <span class="m_scroll_arrows unu"></span>
+                    <span class="m_scroll_arrows doi"></span>
+                    <span class="m_scroll_arrows trei"></span>
+                </div>
+            </div>
+
+            <section class="contacts">
+                <span>
+                    <span id="contact-description">
+                        <a href="">
+                            Book me: Quality Services fast delivery &nbsp;<i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </span>
+                </span>
+            </section>
+
+            <Section class="title">
+                    <div class="box">
+                        <div id="containinghome">
+                        <h2> Hi! <span id="greeting"></span> I'm,<br></h2>
+                         <h1>AUSTINE OTIENO</h1> <br>
+                         <h2>I build things for the web.</h2>
+                         <p id="heroDecription">
+                            I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I’m focused on building accessible, human-centered products
+                         </p>
+                         <div class="buttons">
+                            <span>
+                                <button class="contacthire" type="button">Connect</button></i>
+                            </span>
+                            <span>
+                                <button class="contacthire" type="button">Hire Me<i class="fa-solid fa-arrow-up-right-from-square"></i></button></i>
+                            </span>
+                         </div>
+                        </div>
+                    </div>
+            </Section>
+        <div id="formContainer" style="width: 100vw; height: 100vh; background-color: transparent; backdrop-filter: blur(5px);">
+            <form id="loginForm">
+                <div style="width: 100%; margin: 0px;">
+                    <i onclick="CloseForm()" class="fa-solid fa-xmark" style="color: var(--primary-text);"></i>
+                <h1>Send Message</h1>
+                <span style="text-align: left; font-size: 16px; font-weight: 500; font-family: 'Inter';">Please enter details to continue:</span>
+                <div style="text-align: left;">Name:</div>
+                <div class="inp">
+                    <input type="text" name="name" id="Email" placeholder="Enter your Name">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div style="text-align: left;">Email:<span style="color: red;">*</span></div>
+                <div class="inp">
+                    <input type="email" name="email" id="Email" placeholder="Enter email" required>
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div style="text-align: left;">Message:</div>
+                <div class="inp" style="display: flex;">
+                    <textarea style="color: black;" id="messagebox" rows="9" cols="1" required> Hi Austine, I'm a big fan of your work. I like dogs too.🥰</textarea>
+                </div>
+                <div class="inp">
+                    <input type="submit" id="login" value="SEND">
+                </div>
+                </div>
+            </form>
+        </div>
+        <button id="message" title="Send Me a Message" onclick="Login()"><i class="fa-solid fa-message"></i></button>
+    
+    </section>
+    <br id="about"><br>
+
+    <section id="aboutme">
+        <div style="width: 100%;">
+            <div id="sectionTittle">
+                about austine
+            </div>
+        </div>
+        <div class="AboutContainer">
+           <div class="left" id="sideBar">
+                <div style="text-align: center; color: white;">
+                    <h1>Austine Oduk O.</h1>
+                    <div class="Imagewrapper">
+                        <img src="DSC_0203 (2).JPG" alt="DSC_0203 (2).JPG">
+                    </div>
+                    <div class="social-media1">
+                        <div><a href=""><i id="instagr" class="fa-brands fa-instagram"  title="Instagram"></i></a></div>
+                        <div><a href="https://github.com/DevOduk/DevOduk.git" target="_blank"><i class="fa-brands fa-github" title="Github"></i></a></div>
+                        <div><a href="https://wa.link/ld7eog" target="_blank"><i class="fa-brands fa-whatsapp" aria-hidden="true" title="Whatsapp"></i></a></div>
+                    </div>
+                    <div id="rating" title="5 Star Rating">
+                        <i class="fa-solid fa-star" style="color: #ffa200;"></i> <i class="fa-solid fa-star" style="color: #ffa200;"></i> <i class="fa-solid fa-star" style="color: #ffa200;"></i> <i class="fa-solid fa-star" style="color: #ffa200;"></i> <i class="fa-solid fa-star" style="color: #ffa200;"></i> ( 1 )
+                    </div>
+                </div>
+           </div>
+           
+           <div class="right" id="contentWrapper">
+                <div class="right inner">
+                    <h2>About Me</h2>
+                    <p>
+                        Hello! I'm Austine Otieno, a passionate and dedicated Frontend Developer with a strong foundation in web development and a keen eye for user-centric design. With a background in coding and a flair for creativity,  
+                        I bring a unique blend of technical expertise and design sensibility to every project. My journey in web development has been an exhilarating adventure, and I'm excited to share my skills, experiences, and commitment 
+                        to crafting exceptional user experiences through stunning websites.</p>
+                        <div style="width: 100%; height: 60px; text-align: center; align-items: center; position: relative; color: #00ff08;">
+                                <div class="box S1"> Dedicated <img src="https://png.pngtree.com/png-clipart/20230806/original/pngtree-dedicated-symbol-dedicate-devote-vector-picture-image_9914294.png" alt="https://png.pngtree.com/png-clipart/20230806/original/pngtree-dedicated-symbol-dedicate-devote-vector-picture-image_9914294.png"></div>
+                                <div class="box S2"> Visionary <img src="https://cdn-icons-png.flaticon.com/512/7179/7179592.png" alt="cdn-icons-png.flaticon.com/512/7179/7179592"> </div>
+                                <div class="box S3"> Optimistic <img src="https://png.pngtree.com/png-clipart/20230806/original/pngtree-dedicated-symbol-dedicate-devote-vector-picture-image_9914294.png" alt=""></div>
+                                <div class="box S4"> Critical Thinker <img src="https://leightremaine.com/wp-content/images/the-art-of-critical-thinking-key-steps-to-free-the-mind.png" alt=""></div>
+                                <div class="box S5"> Observant 🧐</div>
+                                <div class="box S6"> Team builder / leader 👨‍👨‍👦</div>
+                                <div class="box S7"> Creative 🥰</div>
+                                <div class="box S8"> Enthusiastic 📈</div>
+                                <div class="box S9"> Ambitious Coder <img src="https://static.wixstatic.com/media/851e3c_2154ccf94c4845209aaadcd83f2b7421~mv2.png/v1/fill/w_560,h_464,al_c,lg_1,q_85,usm_4.00_1.00_0.00,enc_auto/4-removebg-preview.png" alt=""></div>
+                                <div class="box S10"> Loves Dogs 🐶</div>
+                        </div>
+                    <h2>Skills</h2>
+                    <p>As a Junior Frontend Developer, I possess a range of skills crucial for creating dynamic and engaging web applications. Some of my key skills include:</p>
+                    <ul>
+                        <li>Proficient in HTML, CSS, and JavaScript to build responsive and visually appealing user interfaces.</li>
+                        <li>Familiarity with modern frontend libraries and frameworks such as React, Vue, or Angular, enabling me to create interactive and seamless web experiences.</li>
+                        <li>Experience in version control systems like Git, ensuring collaborative and efficient development workflows.</li>
+                        <li>Knowledge of CSS preprocessors (SASS/SCSS) for organized and maintainable styling.</li>
+                        <li>Strong understanding of cross-browser compatibility and web performance optimization techniques.</li>
+                        <li>Basic understanding of UX/UI principles to design intuitive and user-friendly interfaces.</li>
+                        <li>Ability to translate design mockups into fully functional web pages, ensuring pixel-perfect accuracy.</li>
+                    </ul>
+        
+                    <h2>The Journey of Web Development: A Passion Unveiled</h2>
+                    <p> <img src="person-coding.png" alt="person">
+                        Web development is not just a job for me – it's a captivating journey that fuels my creativity and drives me to push boundaries. I'm enthralled by the process of transforming ideas into digital realities, 
+                        weaving code and design into a harmonious symphony that resonates with users. The beauty of web development lies in its constant evolution and the limitless possibilities it offers to create innovative solutions.
+                        This passion for continuous learning and improvement is what propels me to create exceptional online experiences that leave a lasting impact.
+                    </p>
+                    <h2>Embracing the Web Development Lifestyle</h2>
+                    <p> 
+                        <img src="programming-setup.png" id="setup" alt="programming-setup">
+                        Web development isn't just a 9-to-5 job; it's a lifestyle that I wholeheartedly embrace. I thrive in the ever-changing landscape of technology and design, and I find joy in staying up-to-date with the latest industry
+                        trends and best practices. Whether I'm experimenting with new coding techniques, exploring emerging design trends, or brainstorming innovative user interactions, I'm fully committed to crafting digital experiences that stand out and inspire.
+                        Immersed in the Web Dev world, where code weaves dreams into reality. Passionately crafting digital experiences, one line at a time. Embracing the ever-evolving journey with boundless love.
+                    </p>
+                    <h2>UX/UI: Elevating User Experiences</h2>
+                    <p>
+                        Understanding the principles of User Experience (UX) and User Interface (UI) design is at the core of my approach. I recognize the importance of intuitive navigation, <br>
+                        clear visual hierarchy, and seamless interactions in creating meaningful connections between users and websites. By incorporating my knowledge of UX/UI design, I aim to build interfaces that are not only
+                        aesthetically pleasing but also enhance usability and accessibility, ensuring a delightful experience for every visitor.
+                        
+                    </p>
+                    <h2>Pursuit of Quality and User-Friendly Websites</h2>
+                    <p>
+                        My desire for quality goes beyond aesthetics; it extends to the functionality and user-friendliness of every website I create. I'm committed to delivering websites that are optimized for performance, accessibility, and responsiveness across all devices. 
+                    </p>
+                    <p>
+                        With a meticulous attention to detail, I strive to exceed expectations and create digital platforms that not only meet but exceed user needs and expectations.
+                    </p>
+                    <img src="uxdesign2.jpg" alt="uxdesign2" style="width: 100%; margin: 10px 0;">
+                    <p>
+                        Thank you for taking the time to explore my portfolio. I invite you to dive into my projects and witness firsthand how my skills, passion, and dedication come together to shape extraordinary web experiences. <br>
+                        If you're looking for a frontend developer who is not only technically adept but also deeply invested in the art of web development, I'm excited to collaborate and bring your digital vision to life.
+                    </p>
+                    <div style="width: 100%; text-align: center; padding: 30px 0;">
+                        <a href="W3BResume main.pdf" target="_blank" title="Download Resume">
+                            <button style="padding: 0 40px;">View Resume &nbsp; <span> <i class="fa-solid fa-cloud-arrow-down"></i></span></button>
+                        </a>
+                           
+                        
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+    </section>
+    <br id="projects"><br>
+
+    <div style="width: 100%;">
+        <div id="sectionTittle">
+            projects
+        </div>
+    </div>
+    <section class="Projects">
+        <h2>These are some of my works</h2>
+        <div class="Project">
+            <div class="project-description-wrapper">
+                <h3>01. Project Name</h3>
+                <div>
+                    <p>
+                        Description. What the website does and company. My role in the same
+                    </p>
+                </div>
+                <a href="" id="Button">
+                    <button>
+                        Visit Website <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </button>
+                </a>
+                <div style="text-align: center;">
+                    <p>Languages used:</p>
+                    <div class="container-icons-mini">
+                        <button class="box-icon">
+                            <i class="fa-brands fa-html5" aria-hidden="true"></i>
+                        </button>
+                        <button class="box-icon">
+                            <i class="fa-brands fa-css3-alt" aria-hidden="true"></i>
+                        </button>
+                        <button class="box-icon">
+                          <i class="fab fa-js" aria-hidden="true"></i>
+                        </button>
+                        <button class="box-icon">
+                            <i class="fa-brands fa-sass" aria-hidden="true"></i>
+                        </button>
+                        <button class="box-icon">
+                            <i class="fa-brands fa-figma" aria-hidden="true"></i>
+                        </button>
+                        <button class="box-icon">
+                            <i class="fa-brands fa-bootstrap" aria-hidden="true"></i>
+                        </button>
+                      </div>
+                </div>
+            </div>
+            <div class="project-image-wrapper">
+                <img class="background-img" src="work-personal-date-night.png" alt="work-personal-date-night">
+                <div class="overlay">
+                    <div style="width: 60%; margin: 0 auto; line-height: 2;">
+                        Blockchain pioneers bringing transparency, trust, and security to supply.
+                    </div>
+                    <a href="">
+                        <button>
+                            Visit Website <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="Project">
+            <div class="project-image-wrapper">
+                <img class="background-img" src="uxdesign2.jpg" alt="uxdesign2">
+                <div class="overlay">
+                    <div style="width: 60%; margin: 0 auto; line-height: 2;">
+                        Blockchain pioneers bringing transparency, trust, and security to supply.
+                    </div>
+                    <a href="">
+                        <button>
+                            Visit Website <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div class="project-description-wrapper right-config">
+                <h3>Project Name .02</h3>
+                <div>
+                    <p>
+                        Description. What the website does and company. My role in the same
+                    </p>
+                </div>
+                <a href="" id="Button" class="button-right">
+                    <button style="margin-left: auto;">
+                        Visit Website <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </button>
+                </a>
+                <div style="text-align: center;">
+                    <p>Languages used:</p>
+                    <div class="container-icons-mini">
+                        <button class="box-icon">
+                            <i class="fa-brands fa-html5" aria-hidden="true"></i>
+                        </button>
+                        <button class="box-icon">
+                            <i class="fa-brands fa-css3-alt" aria-hidden="true"></i>
+                        </button>
+                        <button class="box-icon">
+                          <i class="fab fa-js" aria-hidden="true"></i>
+                        </button>
+                        <button class="box-icon">
+                            <i class="fa-brands fa-sass" aria-hidden="true"></i>
+                        </button>
+                        <button class="box-icon">
+                            <i class="fa-brands fa-figma" aria-hidden="true"></i>
+                        </button>
+                        <button class="box-icon">
+                            <i class="fa-brands fa-bootstrap" aria-hidden="true"></i>
+                        </button>
+                      </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="Project">
+            <div class="project-description-wrapper">
+                <h3>03. Project Name</h3>
+                <div>
+                    <p>
+                        Description. What the website does and company. My role in the same
+                    </p>
+                </div>
+                <a href="" id="Button">
+                    <button>
+                        Visit Website <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </button>
+                </a>
+                <div style="text-align: center;">
+                    <p>Languages used:</p>
+                    <div class="container-icons-mini">
+                        <button class="box-icon">
+                            <i class="fa-brands fa-html5" aria-hidden="true"></i>
+                        </button>
+                        <button class="box-icon">
+                            <i class="fa-brands fa-css3-alt" aria-hidden="true"></i>
+                        </button>
+                        <button class="box-icon">
+                          <i class="fab fa-js" aria-hidden="true"></i>
+                        </button>
+                        <button class="box-icon">
+                            <i class="fa-brands fa-sass" aria-hidden="true"></i>
+                        </button>
+                        <button class="box-icon">
+                            <i class="fa-brands fa-figma" aria-hidden="true"></i>
+                        </button>
+                        <button class="box-icon">
+                            <i class="fa-brands fa-bootstrap" aria-hidden="true"></i>
+                        </button>
+                      </div>
+                </div>
+            </div>
+            <div class="project-image-wrapper">
+                <img class="background-img" src="work-personal-date-night.png" alt="work-personal-date-night">
+                <div class="overlay">
+                    <div style="width: 60%; margin: 0 auto; line-height: 2;">
+                        Blockchain pioneers bringing transparency, trust, and security to supply.
+                    </div>
+                    <a href="">
+                        <button>
+                            Visit Website <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="Project">
+            <div class="project-image-wrapper">
+                <img class="background-img" src="uxdesign2.jpg" alt="uxdesign2">
+                <div class="overlay">
+                    <div style="width: 60%; margin: 0 auto; line-height: 2;">
+                        Blockchain pioneers bringing transparency, trust, and security to supply.
+                    </div>
+                    <a href="">
+                        <button>
+                            Visit Website <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div class="project-description-wrapper right-config">
+                <h3>Project Name .04</h3>
+                <div>
+                    <p>
+                        Description. What the website does and company. My role in the same
+                    </p>
+                </div>
+                <a href="" id="Button" class="button-right">
+                    <button style="margin-left: auto;">
+                        Visit Website <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </button>
+                </a>
+                <div style="text-align: center;">
+                    <p>Languages used:</p>
+                    <div class="container-icons-mini">
+                        <button class="box-icon">
+                            <i class="fa-brands fa-html5" aria-hidden="true"></i>
+                        </button>
+                        <button class="box-icon">
+                            <i class="fa-brands fa-css3-alt" aria-hidden="true"></i>
+                        </button>
+                        <button class="box-icon">
+                          <i class="fab fa-js" aria-hidden="true"></i>
+                        </button>
+                        <button class="box-icon">
+                            <i class="fa-brands fa-sass" aria-hidden="true"></i>
+                        </button>
+                        <button class="box-icon">
+                            <i class="fa-brands fa-figma" aria-hidden="true"></i>
+                        </button>
+                        <button class="box-icon">
+                            <i class="fa-brands fa-bootstrap" aria-hidden="true"></i>
+                        </button>
+                      </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="Project">
+            <div class="project-description-wrapper">
+                <h3>05. Project Name</h3>
+                <div>
+                    <p>
+                        Description. What the website does and company. My role in the same
+                    </p>
+                </div>
+                <a href="" id="Button">
+                    <button>
+                        Visit Website <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </button>
+                </a>
+                <div style="text-align: center;">
+                    <p>Languages used:</p>
+                    <div class="container-icons-mini">
+                        <button class="box-icon">
+                            <i class="fa-brands fa-html5" aria-hidden="true"></i>
+                        </button>
+                        <button class="box-icon">
+                            <i class="fa-brands fa-css3-alt" aria-hidden="true"></i>
+                        </button>
+                        <button class="box-icon">
+                          <i class="fab fa-js" aria-hidden="true"></i>
+                        </button>
+                        <button class="box-icon">
+                            <i class="fa-brands fa-sass" aria-hidden="true"></i>
+                        </button>
+                        <button class="box-icon">
+                            <i class="fa-brands fa-figma" aria-hidden="true"></i>
+                        </button>
+                        <button class="box-icon">
+                            <i class="fa-brands fa-bootstrap" aria-hidden="true"></i>
+                        </button>
+                      </div>
+                </div>
+            </div>
+            <div class="project-image-wrapper">
+                <img class="background-img" src="work-personal-date-night.png" alt="work-personal-date-night">
+                <div class="overlay">
+                    <div style="width: 60%; margin: 0 auto; line-height: 2;">
+                        Blockchain pioneers bringing transparency, trust, and security to supply.
+                    </div>
+                    <a href="">
+                        <button>
+                            Visit Website <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="Project">
+            <div class="project-image-wrapper">
+                <img class="background-img" src="uxdesign2.jpg" alt="uxdesign2">
+                <div class="overlay">
+                    <div style="width: 60%; margin: 0 auto; line-height: 2;">
+                        Blockchain pioneers bringing transparency, trust, and security to supply.
+                    </div>
+                    <a href="">
+                        <button>
+                            Visit Website <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div class="project-description-wrapper right-config">
+                <h3>Project Name .06</h3>
+                <div>
+                    <p>
+                        Description. What the website does and company. My role in the same
+                    </p>
+                </div>
+                <a href="" id="Button" class="button-right">
+                    <button style="margin-left: auto;">
+                        Visit Website <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </button>
+                </a>
+                <div style="text-align: center;">
+                    <p>Languages used:</p>
+                    <div class="container-icons-mini">
+                        <button class="box-icon">
+                            <i class="fa-brands fa-html5" aria-hidden="true"></i>
+                        </button>
+                        <button class="box-icon">
+                            <i class="fa-brands fa-css3-alt" aria-hidden="true"></i>
+                        </button>
+                        <button class="box-icon">
+                          <i class="fab fa-js" aria-hidden="true"></i>
+                        </button>
+                        <button class="box-icon">
+                            <i class="fa-brands fa-sass" aria-hidden="true"></i>
+                        </button>
+                        <button class="box-icon">
+                            <i class="fa-brands fa-figma" aria-hidden="true"></i>
+                        </button>
+                        <button class="box-icon">
+                            <i class="fa-brands fa-bootstrap" aria-hidden="true"></i>
+                        </button>
+                      </div>
+                </div>
+            </div>
+        </div>
+
+        <!-----------------Iframe trial------------------------>
+        <div class="Project Uonbi">
+            <div class="project-description-wrapper">
+                <h3>07. University of Nairobi Portal Clone</h3>
+                <div>
+                    <p>
+                        This is a replica clone of the University of Nairobi student portal I recreated from scratch (no developer options). This was done single handedly within a period of 2 days. My role revolved around counterchecking properties, shapes, colors and recreating them personally.
+                    </p>
+                </div>
+                <a href="" id="Button">
+                    <button>
+                        Visit Website <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </button>
+                </a>
+                <div style="text-align: center;">
+                    <p>Languages used:</p>
+                    <div class="container-icons-mini">
+                        <button class="box-icon">
+                            <i class="fa-brands fa-html5" aria-hidden="true"></i>
+                        </button>
+                        <button class="box-icon">
+                            <i class="fa-brands fa-css3-alt" aria-hidden="true"></i>
+                        </button>
+                        <button class="box-icon">
+                          <i class="fab fa-js" aria-hidden="true"></i>
+                        </button>
+                      </div>
+                </div>
+            </div>
+            <section class="Uonbi-iframe" style="width: 100%; margin: 10px auto; min-height: 100vh; overflow-y: scroll; text-align: center;">
+                <iframe style="width: 100%; background-color: rgb(255, 255, 255); height: 80vh;" src="file:///C:/Users/Elitebook/Documents/My%20web%20projects/Projects/Client/My%20Websites/University%20of%20Nairobi/Uonbi.ac.ke/Uonbi.ac.ke.html"></iframe>
+                <button>View Source Code <i class="fa-solid fa-code"></i></button>
+            </section>
+        </div>
+
+
+    </section>
+
+
+    <br id="designsTop"><br>
+
+
+
+    <div style="width: 100%;">
+        <div id="sectionTittle">
+            top designs
+        </div>
+    </div>
+    <br id="contactMe"><br>
+
+
+    <div style="width: 100%;">
+        <div id="sectionTittle">
+            contact me
+        </div>
+    </div>
+    <div class="contact-me">
+        <div style="writing-mode: vertical-rl;">
+            <a href="mailto:austine.oduk577@gmail.com" style="display: flex; transform: rotate(180deg);" title="Say Hi">
+                <i style=" transform: rotate(90deg)" class="fa-solid fa-envelope" title="Email Me"></i>&nbsp; austine.oduk577@gmail.com
+            </a>
+        </div>
+    </div>
+
+
+    <div id="contactSocials">
+        <div class="sendMessage">
+            <h1>Send a message:</h1>
+            <form action="https://formsubmit.co/el/wupixa" method="POST">
+                <div>
+                    <label for="name">Your name:</label>
+                    <input type="text" id="senderName" name="name"  placeholder="Enter name" >
+                </div>
+                <div>
+                    <label for="email">Email address:</label>
+                    <input type="text" name="email" id="senderEmail" placeholder="Enter email address" >
+                </div>
+                <div>
+                    <label for="message">Enter message:</label>
+                    <textarea type="text" name="message" id="senderMessage" rows="5"  placeholder="Type message">My name is Austine</textarea>
+                </div>
+                <div>
+                    <input type="checkbox" aria-hidden="true" > Subscribe to my weekly blogs and Newsapers
+                </div>
+                <div style="text-align: right;">
+                    <button class="btnsend" type="submit">Send</button>
+                </div>
+            </form>
+            <script src="https://smtpjs.com/v3/smtp.js"></script>
+        </div>
+        <div class="socialsIcons">
+            <div>
+                <h2>Link up</h2>
+                Feeling social? Check out my social media to stay upto date:
+                <div class="social-media1">
+                    <span><a href="https://stackoverflow.com/users/22455327/user22455327" target="_blank"><i class="fa-brands fa-stack-overflow" title="StackOverflow"></i></a></span>
+                    <span><a href=""><i id="instagr" class="fa-brands fa-instagram"  title="Instagram"></i></a></span>
+                    <span><a href=""><i class="fa-brands fa-twitter" title="Twitter"></i></a></span>
+                    <span><a href="https://www.youtube.com/channel/UCPrYwmoy9wVGNwg-dmyCNRQ" target="_blank"><i class="fa-brands fa-youtube" title="YouTube"></i></a></span>
+                    <span><a href="https://github.com/DevOduk/DevOduk.git" target="_blank"><i class="fa-brands fa-github" title="Github"></i></a></span>
+                    <span><a href="https://wa.link/ld7eog" target="_blank"><i class="fa-brands fa-whatsapp" aria-hidden="true" title="Whatsapp"></i></a></span>
+                </div>
+                <div style="width: 100%; text-align: center; padding: 30px 0;">
+                    <a href="mailto:austine.oduk577@gmail.com" title="Send me an email">
+                        <button>Email Me <span> &nbsp; <i class="fa-solid fa-envelope"></i></span></button>
+                    </a>
+                       
+                    
+                </div>
+           </div>
+        </div>
+       
+    </div>
+
+        <section class="ArrowUp">
+            <a href="#home" id="scrollToTop">
+                <img src="pointright.png" alt="pointright"title="Click to Top" id="pointUp" style="width: 30px; transform: rotate(-90deg);">
+            </a>
+        </section>
+</body>
+<div class="social-media">
+    <div><a href="https://stackoverflow.com/users/22455327/user22455327" target="_blank"><i class="fa-brands fa-stack-overflow" title="StackOverflow"></i></a></div>
+    <div><a href=""><i id="instagr" class="fa-brands fa-instagram"  title="Instagram"></i></a></div>
+    <div><a href=""><i class="fa-brands fa-twitter" title="Twitter"></i></a></div>
+    <div><a href="https://www.youtube.com/channel/UCPrYwmoy9wVGNwg-dmyCNRQ" target="_blank"><i class="fa-brands fa-youtube" title="YouTube"></i></a></div>
+    <div><a href="https://github.com/DevOduk/DevOduk.git" target="_blank"><i class="fa-brands fa-github" title="Github"></i></a></div>
+    <div><a href="https://wa.link/ld7eog" target="_blank"><i class="fa-brands fa-whatsapp" aria-hidden="true" title="Whatsapp"></i></a></div>
+</div>
+<section class="callToAction">
+        <h1> Start a project</h1>
+    </div>
+    <div>
+        Interested in working together? We should queue up a time to chat. I’ll buy the coffee. 
+    </div>
+    <div>
+        <button>Let's Go!!</button>
+        
+    </div>    
+</section>
+<footer>
+    <section style="text-align: center; justify-content: center;">
+        <section class="NavigationP">
+            <div>
+                <h2>Quick Links Panel:</h2>
+                <ul id="NavigPanelFooter">
+                    <a href="#home"><li>Home</li></a>
+                    <a href="#about"  class="active"><li>About Me</li></a>
+                    <a href="#projects"><li>Projects</li></a>
+                    <a href="#designsTop"><li>Top Designs</li></a>
+                    <a href="#testimonials"><li>Testimonials</li></a>
+                    <a href="#contactMe"><li>Contact Me</li></a>
+                </ul>
+            </div>
+            <div>
+                <h2>Socials:</h2>
+                <div class="socials">
+                    <a href="https://stackoverflow.com/users/22455327/user22455327" target="_blank">
+                        <button>
+                            StackOverflow
+                        </button>
+                    </a>
+                    <a href="">
+                        <button>
+                            Instagram
+                        </button>
+                    </a>
+                    <a href="">
+                        <button>
+                            Twitter (X)
+                        </button>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCPrYwmoy9wVGNwg-dmyCNRQ" target="_blank">
+                        <button>
+                            YouTube
+                        </button>
+                    </a>
+                    <a href="https://github.com/DevOduk/DevOduk.git" target="_blank">
+                        <button>
+                            Github
+                        </button>
+                    </a>
+                    <a href="https://wa.link/ld7eog" target="_blank">
+                        <button>
+                            Whatsapp
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div class="Based">
+                <h2>Based in:</h2>
+                <ul>
+                    <li><i class="fa-solid fa-location-dot"></i> Nairobi, Kenya</li>
+                    <li><i class="fa-solid fa-location-crosshairs"></i> Kileleshwa, Kilimani</li>
+                    <li><i class="fa-solid fa-earth-americas"></i> Latitude: -1.28644</li>
+                            <ul style="list-style: none;"> 
+                                <li>&nbsp; Longitude: 36.78244</li>
+                            </ul>
+                </ul>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.271481980604!2d36.77069529067234!3d-1.2831215731093482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10b216b1dbb5%3A0x36640d56944c4ab7!2sKileleshwa%20Estate%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1699094060763!5m2!1sen!2ske" style="border: 1;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div>
+                <h2>Whatsapp:</h2>
+                <div>
+                    <img src="wa.link_ld7eog.png" alt="wa.link Whatsapp me" width="160px">
+                </div>
+            </div>
+        </section>
+        <div>
+            <a href="mailto:austine.oduk577@gmail.com"title="Say Hi">
+                <i class="fa-solid fa-envelope"></i> &nbsp; austine.oduk577@gmail.com
+            </a>
+        </div>
+        <div>
+            Copyright © 2023 | Austine Otieno (aka Oduk) <a href="">View Source Code</a>
+        </div>
+    </section>
+</footer>
+
+
+
+<nav class="Cookie-Policies" id="popuppolicies">
+    <i onclick="TogglePolicies()" class="fa-solid fa-xmark"></i>
+    <div>
+        <h2>Data Privacy</h2>
+        <p>Welcome to [Your Name]'s Portfolio Website. This privacy policy outlines how personal information is collected, used, and safeguarded on this website.</p>
+        <p>This Privacy Policy describes our practices in connection with information that we collect:</p>
+        <ul>
+            <li>Through the websites operated by us, including this <a href="#">Privacy Policy (the “Websites”)</a></li>
+            <li>Through the management information systems made available by us for use on computers and mobile devices (the “Systems”),</li>
+            <li>Through our social media pages</li>
+            <li>Through HTML-formatted email messages that we send to you</li>
+        </ul>
+        <p>
+            Collectively, we refer to the Websites, the Systems, and our Social Media Pages as the “Services”.
+        </p>
+        <h3>Personal Information</h3>
+        <p>"Personal Information” is information that identifies you as an individual or relates to an identifiable individual, including your name and ID. No., phone number, etc.</p>
+        
+        <h3>Collection of Personal Information</h3>
+        <p>We collect Personal Information in a variety of ways, including through the services, offline at various points of collection, from publicly available sources, and from our partners when they share information with us.</p> 
+        
+        <h3>Use of Personal Information</h3> 
+        <p>We and our third-party service providers use Personal Information for legitimate business purposes, including providing the functionality of our services and fulfilling your requests, to complete your transactions, and to communicate to you about our offerings and operations. <br><br>
+            We will engage in this activity with your consent or where we have a legitimate interest. Your information shall be protected from illegitimate processing by our third-party service providers who shall be obligated to follow the guidelines of the data protection act.</p>
+        
+        <h3>Disclosure of Personal Information</h3>
+        <p>We may disclose Personal Information to our third-party services providers to facilitate services they provide to us, including services such as payment processing, event registration, information technology, and related infrastructure provision, customer service, email, etc. Also, by using the Services, you may elect to disclose Personal Information through communication via emails, chat, profile pages, blogs, and other services to which you are able to post information and content (including, without limitation, our Social Media Pages). Please note that any information you post or disclose through these services will become public and may be available to other users and the general public.</p>
+        
+        <h3>Other Uses and Disclosures</h3>
+        <p>We also use and disclose your Personal Information as necessary or appropriate, especially when we have a legal obligation or legitimate interest to do so to comply with applicable law and regulations, to cooperate with public and government authorities, to cooperate with law enforcement and for other legal reasons.</p>
+        <h3>Collection of Other Information</h3>
+        <p>We and our third-party service providers may collect Other Information in a variety of ways, including through your browser or device, through your use of the System, using cookies and your IP Address.</p>
+        <h3>Contacting Us</h3>
+        <p>If you have any questions about the collection, use, or disclosure of your Personal Information, please contact us at <a href="mailto:your@email.com">your@email.com</a>.</p>
+    </div>
+    
+    <span id="button" class="policiesBTNs">
+        <span>
+            <input type="checkbox" value="accept"> I accept all data privacy policies. View <a href="#">Terms and conditions,</a> 
+        </span>
+        <span>
+            <button class="btnPrivacy" title="Deny Data Privacy Policies" onclick="CloseCookiePolicies()">Deny All Policies</button>
+        </span>
+        <span>    
+            <button class="btnPrivacy" title="Accept Data Privacy Policies" onclick="CloseCookiePolicies()">Accept Data Privacy Policies</button>
+        </span>
+    </span>
+    
+</nav> 
+<img src="animation_lliho6mj_small.gif" alt="" style="position: absolute; z-index: 456; left: 50%; top: 50%; border-radius: 50%; display: none; transform: translate(-50%, -50%); transition: .5s ease-in-out; transform: scale(0);" id="confirmed">
+<script src="Portfolio.Homepage1.js"> </script>
+<script>
+    
+</script>
+</html>
