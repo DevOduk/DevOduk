@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @Dev</>Oduk
+- 👋 Hi, I’m @Oduk
 - 👀 I’m interested in Website development both front and backend 
 - 🌱 I’m currently learning Javascript 
 - 💞️ I’m looking to collaborate on ideas and proffessional tutoring and projects as well as inspiration on the best and responsive website design 
